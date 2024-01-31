@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Set character encoding for proper rendering of special characters -->
+    <meta charset="UTF-8" />
+    <!-- Configure viewport settings for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon to display a small image in the browser tab -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- Link to external stylesheet for styling -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <!-- Defer loading of the JavaScript file until the HTML has been parsed -->
+    <script src="./app.js" defer></script>
+
+    <!-- Page title -->
+    <title>Kumaravel | Advice generator app</title>
+  </head>
+  <body>
+    <!-- Main content container -->
+    <main class="main">
+      <!-- Advice card section -->
+      <section class="advice-card">
+        <!-- Advice heading with advice number -->
+        <h3 class="advice-card__advice" id="advice">
+          advice <span id="span-advice" class="span-advice">#117</span>
+        </h3>
+        <!-- Advice message paragraph -->
+        <p id="message" class="advice-card__msg">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis
+          sint possimus, adipisci fugit unde dicta debitis id non!
+        </p>
+        <!-- Divider image for visual separation -->
+        <img
+          class="advice-card__divider"
+          src="./images/pattern-divider-mobile.svg"
+          alt="divider"
+        />
+        <!-- Button to generate new advice -->
+        <button id="btn" class="advice-card__button">
+          <img src="./images/icon-dice.svg" alt="dice" />
+        </button>
+      </section>
+    </main>
+  </body>
+</html>
